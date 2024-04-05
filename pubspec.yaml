@@ -36,6 +36,17 @@ dependencies:
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.6
   flutter_svg: ^2.0.10+1
+  emoji_picker_flutter: ^1.6.4
+  shared_preferences: ^2.2.2
+  js: ^0.6.2
+  camera: ^0.10.5+9
+  path_provider: ^2.1.2
+  path: 
+  
+
+  
+  
+  
 
 dev_dependencies:
   flutter_test:

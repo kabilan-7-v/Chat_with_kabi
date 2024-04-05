@@ -12,8 +12,12 @@ class customchat extends StatelessWidget {
   Widget build(BuildContext context) {
     return InkWell(
       onTap: () {
-        Navigator.push(context,
-            MaterialPageRoute(builder: (contex) => individual(chatModel: chatModel,)));
+        Navigator.push(
+            context,
+            MaterialPageRoute(
+                builder: (contex) => individual(
+                      chatModel: chatModel,
+                    )));
       },
       child: Column(
         children: [

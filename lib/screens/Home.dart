@@ -1,5 +1,6 @@
 // ignore_for_file: camel_case_types, override_on_non_overriding_member
 
+import "package:chat_with_kabi/pages/camercapage.dart";
 import "package:chat_with_kabi/pages/chatpage.dart";
 import "package:flutter/material.dart";
 
@@ -67,7 +68,7 @@ class _homescreenState extends State<homescreen> {
         ),
         body: const TabBarView(
           children: [
-            Text("camera"),
+            camerapage(),
             chatpage(),
             Text("status"),
             Text("calls"),

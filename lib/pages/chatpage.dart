@@ -2,6 +2,7 @@
 
 import 'package:chat_with_kabi/customui/Customcard.dart';
 import 'package:chat_with_kabi/model/chatmodel.dart';
+import 'package:chat_with_kabi/screens/selectcontact.dart';
 import 'package:flutter/material.dart';
 
 class chatpage extends StatefulWidget {
@@ -36,7 +37,13 @@ class _chatpageState extends State<chatpage> {
   Widget build(BuildContext context) {
     return Scaffold(
         floatingActionButton: FloatingActionButton(
-            onPressed: () {}, child: const Icon(Icons.chat)),
+            onPressed: () {
+              Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (BuildContext context) => Selectcontact()));
+            },
+            child: const Icon(Icons.chat)),
         body: ListView.builder(
           itemCount: chats.length,
           itemBuilder: (context, index) => customchat(chatModel: chats[index]),
