@@ -8,6 +8,7 @@ class camerapage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return camerascreen();
+    return camerascreen(
+    );
   }
 }
